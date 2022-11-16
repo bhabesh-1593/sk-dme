@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20220829133110",
+  "clientRootFolder": "utilityapis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dpv_confirmation_master",
+  "fields": [
+    {
+      "fieldName": "dpvConfirmationId",
+      "fieldType": "Long",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "enumerations",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "definition",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "utilityapis",
+  "name": "DPVConfirmationMaster",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

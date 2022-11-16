@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20220829133114",
+  "clientRootFolder": "utilityapis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "urbanization_master",
+  "fields": [
+    {
+      "fieldName": "urbanizationId",
+      "fieldType": "Long",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "urbanization",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "abbreviation",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "utilityapis",
+  "name": "UrbanizationMaster",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

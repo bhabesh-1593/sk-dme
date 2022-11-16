@@ -1,0 +1,243 @@
+{
+  "applications": "*",
+  "changelogDate": "20220921091716",
+  "clientRootFolder": "salesorder",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "t_sales_order_financial_details",
+  "fields": [
+    {
+      "fieldName": "salesOrderFinancialId",
+      "fieldType": "Long",
+      "options": {
+        "autoGenerate": "true",
+        "id": true
+      }
+    },
+    {
+      "fieldName": "salesOrderId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "patientId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "itemId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "itemName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "itemProcCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "chargedAmount",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "allowedAmount",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "primaryInsurerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryInsurerName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "primaryInsurerStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInsurerCoveragePercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryInsurerCoverageAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "primaryInsurerDeductibleAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "primaryInsurerPayment",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "primaryInsurerBalanceAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "secondaryInsurerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "secondaryInsurerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerCoveragerPercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "secondaryInsurerCoverageAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "secondaryInsurerPayment",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "secondaryInsurerBalanceAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tertiaryInsurerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tertiaryInsurerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerCoveragePercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tertiaryInsurerCoverageAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tertiaryInsurerPayment",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tertiaryInsurerBalanceAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "patientCoinsurancePercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "patientCoinsuranceAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "totalPatientResponsibilityAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "patientPayAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "narration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInvoiceNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInvoiceNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInvoiceNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInvoiceDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "secondaryInvoiceDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tertiaryInvoiceDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "primaryInvoiceStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInvoiceStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInvoiceStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dos",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createdByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updatedByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "salesorder",
+  "name": "SalesOrderFinancialDetails",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "salesOrderMaster",
+      "otherEntityRelationshipName": "financialDetails",
+      "relationshipName": "salesOrderMaster",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

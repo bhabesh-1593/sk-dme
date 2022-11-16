@@ -1,0 +1,516 @@
+{
+  "applications": "*",
+  "changelogDate": "20220823190401",
+  "clientRootFolder": "salesorder",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "t_sales_order_item_details",
+  "fields": [
+    {
+      "fieldName": "salesOrderItemDetailsId",
+      "fieldType": "Long",
+      "options": {
+        "autoGenerate": "true",
+        "id": true
+      }
+    },
+    {
+      "fieldName": "salesOrderId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "patientId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "itemLocationId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "salesOrderDetailItemId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "salesOrderDetailItemName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "salesOrderDetailStockingUom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailStockingUomName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailItemDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailDefaultVendor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailOriginalDos",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "salesOrderDetailPreviousBillingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "salesOrderDetailNextBillingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "salesOrderDetailDosTo",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "salesOrderDetailNextPeriod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSpecialPricing",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailPriceOverride",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSpecialTaxRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailQty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailBqty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailLineQty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailProcCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailPriceOption",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailModifier1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailModifier2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailModifier3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailModifier4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailChargeAmt",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesOrderDetailAllowedAmt",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesOrderDetailTaxable",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnUpgrade",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnPrintDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnItem",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnProcCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnAllow",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnCharge",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnModifier1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAbnModifier2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailTaxRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailTaxZone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailNonTaxReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailNote",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSaleType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailItemGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailItemUser1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailItemUser2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailItemUser3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailItemUser4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailConvertedToPurchase",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailManualConvertToPurchaseMctp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpChargeAmt",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpAllowedAmt",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpModifier1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpModifier2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpModifier3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpModifier4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailMctpPeriod",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailAddtlModifier1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAddtlModifier2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAddtlModifier3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailAddtlModifier4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailNextDateOfService",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "salesOrderDetailPriceTable",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailPriceOptionName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailExtendedChargeAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesOrderDetailExtendedAllowanceAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesOrderDetailItemNdcCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailManufacturer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailCbPricing",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailCbPriceTableOverride",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailCbOverride",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailMessages",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailLocation",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailCaloriesPerDay",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingProcudureCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingPriceOption",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingPriceOptionName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingModifier1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingModifier2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingModifier3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingModifier4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingAdditionalModifier1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingadditionalModifier2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingadditionalModifier3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingadditionalModifier4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondaryBillingIgnore",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSecondarySpecialBilling",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailSpanDateSplitBilling",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderDetailManufacturerItemIdNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cmnparCmnFormId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cmnparCmnKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparCmnCreateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnExpirationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnInitialDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnRenewalDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnRecertificationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnPhysicianDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparParId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cmnparParDescr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparParInitialDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparParExpirationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnLogDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnLengthOfNeed",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cmnparCmnPrintedDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnPrintedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparFaxedDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cmnparCmnPlaceholder",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparCmnFaxedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparCmnLoggedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmnparNumberOfRefills",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createdByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updatedByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "salesorder",
+  "name": "SalesOrderItemDetails",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "salesOrderId",
+      "otherEntityName": "salesOrderMaster",
+      "otherEntityRelationshipName": "itemDetails",
+      "relationshipName": "itemDetails",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

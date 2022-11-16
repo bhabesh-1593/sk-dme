@@ -1,0 +1,470 @@
+entity SalesOrderClinicalDetails {
+  @Id salesOderClinicalDetailsId Integer
+  salesOderId Integer required
+  salesOrderClinicalDetailsUuid UUID
+  patientId Integer required
+  patientWeightInKg Double
+  patientWeightInLbs Double
+  heightInInches Double
+  heightInCm Double
+  salesRepId Integer
+  salesepName String required
+  practitionerId Integer
+  renderingProviderType String
+  renderingProviderFacilityId Integer
+  renderingProviderFacilityName String pattern(/^[A-Z][a-z]+\d$/)
+  renderingProviderId Integer required
+  renderingProviderFirstName String required pattern(/^[A-Z][a-z]+\d$/)
+  renderingProviderMiddleName String pattern(/^[A-Z][a-z]+\d$/)
+  renderingProviderLastName String required pattern(/^[A-Z][a-z]+\d$/)
+  renderingProviderNpi String required
+  renderingProviderDea String required
+  renderingProviderAddressId Integer required
+  renderingProviderAddressLine1 String
+  renderingProviderAddressLine2 String
+  renderingProviderCityName String
+  renderingProviderStateName String
+  renderingProviderZip String
+  renderingProviderContactId Integer required
+  renderingProviderPhone1 String
+  renderingProviderPhone2 String
+  renderingProviderEmail String
+  renderingProviderFax String
+  referringProviderType String
+  referringProviderFacilityId Integer
+  referringProviderFacilityName String pattern(/^[A-Z][a-z]+\d$/)
+  referringProviderId Integer required
+  referringProviderFirstName String required pattern(/^[A-Z][a-z]+\d$/)
+  referringProviderMiddleName String pattern(/^[A-Z][a-z]+\d$/)
+  referringProviderLastName String required pattern(/^[A-Z][a-z]+\d$/)
+  referringProviderNpi String required
+  referringProviderDea String required
+  referringProviderAddressId Integer required
+  referringProviderAddressLine1 String
+  referringProviderAddressLine2 String
+  referringProviderCityName String
+  referringProviderStateName String
+  referringProviderZip String
+  referringProviderContactId Integer required
+  referringProviderPhone1 String
+  referringProviderPhone2 String
+  referringProviderEmail String
+  referringProviderFax String
+  orderingProviderType String
+  orderingProviderFacilityId Integer
+  orderingProviderFacilityName String pattern(/^[A-Z][a-z]+\d$/)
+  orderingProviderId Integer required
+  orderingProviderFirstName String required pattern(/^[A-Z][a-z]+\d$/)
+  orderingProviderMiddleName String pattern(/^[A-Z][a-z]+\d$/)
+  orderingProviderLastName String required pattern(/^[A-Z][a-z]+\d$/)
+  orderingProviderNpi String required
+  orderingProviderDea String required
+  orderingProviderAddressId Integer required
+  orderingProviderAddressLine1 String
+  orderingProviderAddressLine2 String
+  orderingProviderCityName String
+  orderingProviderStateName String
+  orderingProviderZip String
+  orderingProviderContactId Integer required
+  orderingProviderPhone1 String
+  orderingProviderPhone2 String
+  orderingProviderEmail String
+  orderingProviderFax String
+  marketingReferalTypeId Integer
+  marketingReferalTypeDescription String
+  marketingReferalId Integer
+  marketingReferalName String required
+  icd10DiagnosisCode1 String
+  icd10DiagnosisCode2 String
+  icd10DiagnosisCode3 String
+  icd10DiagnosisCode4 String
+  icd10DiagnosisCode5 String
+  icd10DiagnosisCode6 String
+  icd10DiagnosisCode7 String
+  icd10DiagnosisCode8 String
+  icd10DiagnosisCode9 String
+  icd10DiagnosisCode10 String
+  icd10DiagnosisCode11 String
+  icd10DiagnosisCode12 String
+  epsdtCertificationConditionIndicator String
+  epsdtCertificationCode String
+  status String
+  createdById Integer
+  createdByName String
+  createdDate ZonedDateTime
+  updatedById Integer
+  updatedByName String
+  updatedDate ZonedDateTime
+}
+entity SalesOrderDocuments {
+  patientId Integer required
+  salesOrderDocumentsUuid UUID
+  patientName String required pattern(/^[A-Z][a-z]+\d$/)
+  patientDob LocalDate required
+  patientDod LocalDate
+  patientSsn String required
+  Status String
+  patientGender String required
+  patientHeight Integer required
+  patientWeight Integer required
+  patientContact1 String required
+  patientContact2 String
+  email String
+  fax String
+  hipaaOnFileStatus String required
+  branchId Integer required
+  branchName String required
+  documentTypeId Integer
+  documentTypeName String
+  documentDate LocalDate
+  documentNote String
+  salesOrderDocumentId Integer
+  documentTitle String
+  documentName String
+  scanBy Integer
+  fileUploadPath String
+  uploadDate LocalDate
+  uploadBy Integer
+  scanDate LocalDate
+  reviewStatus String
+  reviewReason String
+  reviewDate LocalDate
+  reviewBy Integer
+  status String
+  createdById Integer
+  createdByName String
+  createdDate ZonedDateTime
+  updatedById Integer
+  updatedByName String
+  updatedDate ZonedDateTime
+}
+entity SalesOrderInsuranceDetails {
+  @Id salesOrderInsuranceDetailsId Integer
+  salesOrderId Integer required
+  salesOrderInsuranceDetailsUuid UUID
+  patientId Integer required
+  primaryInsurerId Integer required
+  primaryInsurerName String required
+  primaryInsuranceGroupId Integer required
+  primaryInsuranceGroupName String required
+  primaryInsurancePlanId Integer
+  primaryInsurancePlanType String
+  primaryInsuranceStateId Integer
+  primaryInsuranceStateName String
+  primaryInsurerPolicyNo String
+  primaryInsurerPatientIdNumber String
+  primaryInsurerEffectiveDate LocalDate
+  primaryInsurerVerificationStatus String
+  primaryInsurerVerificationDate LocalDate
+  primaryInsurerPayPercentage Integer
+  primaryBox10d String
+  primaryBox19 String
+  primaryBox24ia String
+  primaryBox24ja String
+  primaryBox24jb String
+  primaryIncludeBox24Jbstatus String
+  primaryIncludePayerSalesOrderStatus String
+  primaryWaitForPreviousPayerBeforeBillingStatus String
+  primaryPayPercentageStatus String
+  secondaryInsurerId Integer
+  secondaryInsurerName String
+  secondaryInsuranceGroupId Integer required
+  secondaryInsuranceGroupName String required
+  secondaryInsurancePlanId Integer
+  secondaryInsurancePlanType String
+  secondaryInsuranceStateId Integer
+  secondaryInsuranceStateName String
+  secondaryInsurerPolicyNo String
+  secondaryInsurerPatientIdNumber String
+  secondaryInsurerEffectiveDate LocalDate
+  secondaryInsurerVerificationStatus String
+  secondaryInsurerVerificationDate LocalDate
+  secondaryInsurerPayPercentage Integer
+  secondaryBox10d String
+  secondaryBox19 String
+  secondaryBox24ia String
+  secondaryBox24ja String
+  secondaryBox24jb String
+  secondaryIncludeBox24jbStatus String
+  secondaryIncludePayerSalesOrderStatus String
+  secondaryWaitPreviousPayerBefrBillingStatus String
+  secondaryPayPercentageStatus String
+  tertiaryInsurerId Integer
+  tertiaryInsurerName String
+  tertiaryInsuranceGroupId Integer required
+  tertiaryInsuranceGroupName String required
+  tertiaryInsurancePlanId Integer
+  tertiaryInsurancePlanType String
+  tertiaryInsuranceStateId Integer
+  tertiaryInsuranceStateName String
+  tertiaryInsurerPolicyno String
+  tertiaryInsurerPatientIdNumber String
+  tertiaryInsurerEffectiveDate LocalDate
+  tertiaryInsurerVerificationStatus String
+  tertiaryInsurerVerificationDate LocalDate
+  tertiaryInsurerPayPercentage Integer
+  tertiaryBox10d String
+  tertiaryBox19 String
+  tertiaryBox24ia String
+  tertiaryBox24ja String
+  tertiaryBox24jb String
+  tertiaryIncludeBox24jbStatus String
+  tertiaryIncludePayerInSalesOrderStatus String
+  tertiaryWaitPreviousPayerBeforeBillingStatus String
+  tertiaryPayPercentage0Status String
+  insuranceVerificationStatus String
+  coverageVerificationStatus String
+  excludeFromEligibilityCheckStatus String
+  patientPayPercentage String
+  patientIncludeThisPayorInSalesOrderStatus String
+  patientWaitForPreviousPayerBeforeBillingStatus String
+  workersCompDateOfOnset LocalDate
+  workersCompInjuryRelatedEmploymentStatus String
+  workersCompInjuryRelatedAutoAccidentStatus String
+  workersCompAutoAccidentStateId Integer
+  workersCompInjuryRelatedToOtherAccidentStatus String
+  eclaimsAttachmentStatus String
+  attachmentNumber Integer
+  typeCode String
+  transactionCode String
+  claimsNoteType String
+  claimsNote String
+  salesOrderNo String
+  status String
+  createdById Integer
+  createdByName String
+  createdDate ZonedDateTime
+  updatedById Integer
+  updatedByName String
+  updatedDate ZonedDateTime
+}
+entity SalesOrderItemDetails {
+  @Id salesOrderItemDetailsId Integer
+  salesOrderId Integer required
+  salesOrderItemDetailsUuid UUID
+  patientId Integer required
+  itemLocationId Integer required
+  salesOrderDetailItemId Integer required
+  salesOrderDetailItemName String required
+  salesOrderDetailStockingUom String
+  salesOrderDetailStockingUomName String
+  salesOrderDetailItemDescription String
+  salesOrderDetailDefaultVendor String
+  salesOrderDetailOriginalDos LocalDate
+  salesOrderDetailPreviousBillingDate LocalDate
+  salesOrderDetailNextBillingDate LocalDate
+  salesOrderDetailDosTo LocalDate
+  salesOrderDetailNextPeriod String
+  salesOrderDetailSpecialPricing String
+  salesOrderDetailPriceOverride String
+  salesOrderDetailSpecialTaxRate Integer
+  salesOrderDetailQty Integer
+  salesOrderDetailBqty Integer
+  salesOrderDetailLineQty Integer
+  salesOrderDetailProcCode String
+  salesOrderDetailPriceOption String
+  salesOrderDetailModifier1 String
+  salesOrderDetailModifier2 String
+  salesOrderDetailModifier3 String
+  salesOrderDetailModifier4 String
+  salesOrderDetailChargeAmt Double
+  salesOrderDetailAllowedAmt Double
+  salesOrderDetailTaxable String
+  salesOrderDetailAbn String
+  salesOrderDetailAbnUpgrade String
+  salesOrderDetailAbnPrintDate LocalDate
+  salesOrderDetailAbnItem String
+  salesOrderDetailAbnProcCode String
+  salesOrderDetailAbnAllow String
+  salesOrderDetailAbnCharge Integer
+  salesOrderDetailAbnModifier1 String
+  salesOrderDetailAbnModifier2 String
+  salesOrderDetailTaxRate Integer
+  salesOrderDetailTaxZone String
+  salesOrderDetailNonTaxReason String
+  salesOrderDetailNote String
+  salesOrderDetailSaleType String
+  salesOrderDetailItemGroup String
+  salesOrderDetailItemUser1 String
+  salesOrderDetailItemUser2 String
+  salesOrderDetailItemUser3 String
+  salesOrderDetailItemUser4 String
+  salesOrderDetailConvertedToPurchase String
+  salesOrderDetailManualConvertToPurchaseMctp String
+  salesOrderDetailMctpChargeAmt Double
+  salesOrderDetailMctpAllowedAmt Double
+  salesOrderDetailMctpModifier1 String
+  salesOrderDetailMctpModifier2 String
+  salesOrderDetailMctpModifier3 String
+  salesOrderDetailMctpModifier4 String
+  salesOrderDetailMctpPeriod Integer
+  salesOrderDetailAddtlModifier1 String
+  salesOrderDetailAddtlModifier2 String
+  salesOrderDetailAddtlModifier3 String
+  salesOrderDetailAddtlModifier4 String
+  salesOrderDetailNextDateOfService LocalDate
+  salesOrderDetailPriceTable String
+  salesOrderDetailPriceOptionName String
+  salesOrderDetailExtendedChargeAmount Double
+  salesOrderDetailExtendedAllowanceAmount Double
+  salesOrderDetailItemNdcCode String
+  salesOrderDetailManufacturer String
+  salesOrderDetailCbPricing String
+  salesOrderDetailCbPriceTableOverride String
+  salesOrderDetailCbOverride String
+  salesOrderDetailMessages String
+  salesOrderDetailLocation Integer
+  salesOrderDetailCaloriesPerDay Integer
+  salesOrderDetailSecondaryBillingProcudureCode String
+  salesOrderDetailSecondaryBillingPriceOption String
+  salesOrderDetailSecondaryBillingPriceOptionName String
+  salesOrderDetailSecondaryBillingModifier1 String
+  salesOrderDetailSecondaryBillingModifier2 String
+  salesOrderDetailSecondaryBillingModifier3 String
+  salesOrderDetailSecondaryBillingModifier4 String
+  salesOrderDetailSecondaryBillingAdditionalModifier1 String
+  salesOrderDetailSecondaryBillingadditionalModifier2 String
+  salesOrderDetailSecondaryBillingadditionalModifier3 String
+  salesOrderDetailSecondaryBillingadditionalModifier4 String
+  salesOrderDetailSecondaryBillingIgnore String
+  salesOrderDetailSecondarySpecialBilling String
+  salesOrderDetailSpanDateSplitBilling String
+  salesOrderDetailManufacturerItemIdNumber String
+  cmnId Integer
+  cmnparCmnFormId Integer
+  cmnparCmnKey String
+  cmnparCmnCreateDate LocalDate
+  cmnparCmnExpirationDate LocalDate
+  cmnparCmnInitialDate LocalDate
+  cmnparCmnRenewalDate LocalDate
+  cmnparCmnRecertificationDate LocalDate
+  cmnparCmnPhysicianDate LocalDate
+  cmnparCmnStatus String
+  cmnparParId Integer
+  cmnparParDescr String
+  cmnparParInitialDate LocalDate
+  cmnparParExpirationDate LocalDate
+  cmnparCmnLogDate LocalDate
+  cmnparCmnLengthOfNeed Integer
+  cmnparCmnPrintedDate LocalDate
+  cmnparCmnPrintedBy String
+  cmnparFaxedDate LocalDate
+  cmnparCmnPlaceholder String
+  cmnparCmnFaxedBy String
+  cmnparCmnLoggedBy String
+  cmnparNumberOfRefills Integer
+  status String
+  createdById Integer
+  createdByName String
+  createdDate ZonedDateTime
+  updatedById Integer
+  updatedByName String
+  updatedDate ZonedDateTime
+}
+entity SalesOrderMaster {
+  @Id salesOderId Integer
+  salesOderNo String required
+  salesOrderMasterUuid UUID
+  patientId Integer required
+  patientFirstName String required pattern(/^[A-Z][a-z]+\d$/)
+  patientMiddleName String required pattern(/^[A-Z][a-z]+\d$/)
+  patientLastName String required pattern(/^[A-Z][a-z]+\d$/)
+  patientAddressId Integer required
+  patientAddressLine1 String
+  patientAddressLine2 String
+  cityName String
+  stateName String
+  zipCode String
+  patientContactId Integer required
+  phone1 String
+  phone2 String
+  patientDob LocalDate required
+  patientHeight Double
+  patientWeight Double
+  patientSsn String required
+  patientGender String required
+  patientBranchId Integer
+  branchName String
+  patientDod LocalDate required
+  hipaaOnFileStatus String
+  facilityId Integer required
+  facilityName String required pattern(/^[A-Z][a-z]+\d$/)
+  facilityNPI String required
+  deliveryScheduleDatetime ZonedDateTime
+  deliveryActualDatetime ZonedDateTime
+  deliveryAddressLine1 String
+  deliveryAddressLine2 String
+  deliveryCityName String
+  deliveryStateName String
+  deliveryZipCode String
+  deliveryPhoneNo1 String
+  deliveryPhoneNo2 String
+  deliveryBranchId Integer
+  deliveryBranchName String
+  taxZoneId Integer
+  taxRate Double
+  salesOrderNote String
+  deliveryNote String
+  deliveryTechnician String
+  signatureRequiredStatus String
+  podStatus String
+  podStatusDateTime ZonedDateTime
+  podLastMessage String
+  podMessageDateTime ZonedDateTime
+  mutualHoldStatus String
+  holdReasonId Integer
+  holdStatus String
+  holdReasonDescription String
+  stopDate LocalDate
+  stopReasonId Integer
+  stopReasonDescription String
+  inventoryLocationId Integer
+  orderStatus String
+  orderClassificationId Integer
+  posId Integer
+  posName String
+  admissionDate LocalDate
+  dischargeDate LocalDate
+  discountPercentage Integer
+  poNumber String
+  userField1 String
+  userField2 String
+  userField3 String
+  userField4 String
+  reference String
+  wipStatus String
+  wipDaysInState Integer
+  wipAssignedToId Integer
+  wipDateNeeded LocalDate
+  completedStatus String
+  status String
+  createdById Integer
+  createdByName String
+  createdDate ZonedDateTime
+  confirmationById Integer
+  confirmationByName String
+  confirmationDate ZonedDateTime
+  updatedById Integer
+  updatedByName String
+  updatedDate ZonedDateTime
+}
+
+//relationship OneToMany {
+//    SalesOrderMaster{clinicalDetails(salesOrderId)} to SalesOrderClinicalDetails{clinicalDetails(salesOrderId)}
+//    SalesOrderMaster{insuranceDetails(salesOrderId)} to SalesOrderInsuranceDetails{insuranceDetails(salesOrderId)}
+//    SalesOrderMaster{itemDetails(salesOrderId)} to SalesOrderItemDetails{itemDetails(salesOrderId)}
+//}
+
+//relationship OneToMany {
+//    SalesOrderMaster{clinicalDetails(salesOrderId)} to SalesOrderClinicalDetails
+//    SalesOrderMaster{insuranceDetails(salesOrderId)} to SalesOrderInsuranceDetails
+//    SalesOrderMaster{itemDetails(salesOrderId)} to SalesOrderItemDetails
+//}
+
+relationship OneToMany {
+    SalesOrderMaster{clinicalDetails} to SalesOrderClinicalDetails
+    SalesOrderMaster{insuranceDetails} to SalesOrderInsuranceDetails
+    SalesOrderMaster{itemDetails} to SalesOrderItemDetails
+}
+
+use mapstruct, serviceImpl, pagination for all

@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20220829133113",
+  "clientRootFolder": "utilityapis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "footnote_master",
+  "fields": [
+    {
+      "fieldName": "footnotesId",
+      "fieldType": "Long",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "enumerations",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "definition",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "utilityapis",
+  "name": "FootnoteMaster",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
