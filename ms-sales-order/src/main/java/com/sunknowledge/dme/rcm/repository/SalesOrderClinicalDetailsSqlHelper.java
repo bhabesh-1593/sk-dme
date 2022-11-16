@@ -1,0 +1,114 @@
+package com.sunknowledge.dme.rcm.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.data.relational.core.sql.Column;
+import org.springframework.data.relational.core.sql.Expression;
+import org.springframework.data.relational.core.sql.Table;
+
+public class SalesOrderClinicalDetailsSqlHelper {
+
+    public static List<Expression> getColumns(Table table, String columnPrefix) {
+        List<Expression> columns = new ArrayList<>();
+//        columns.add(Column.aliased("id", table, columnPrefix + "_id"));
+        columns.add(Column.aliased("sales_oder_clinical_details_id", table, columnPrefix + "_sales_oder_clinical_details_id"));
+        columns.add(Column.aliased("sales_oder_id", table, columnPrefix + "_sales_oder_id"));
+        columns.add(Column.aliased("patient_id", table, columnPrefix + "_patient_id"));
+        columns.add(Column.aliased("patient_weight_in_kg", table, columnPrefix + "_patient_weight_in_kg"));
+        columns.add(Column.aliased("patient_weight_in_lbs", table, columnPrefix + "_patient_weight_in_lbs"));
+        columns.add(Column.aliased("height_in_inches", table, columnPrefix + "_height_in_inches"));
+        columns.add(Column.aliased("height_in_cm", table, columnPrefix + "_height_in_cm"));
+        columns.add(Column.aliased("sales_rep_id", table, columnPrefix + "_sales_rep_id"));
+        columns.add(Column.aliased("salesep_name", table, columnPrefix + "_salesep_name"));
+        columns.add(Column.aliased("practitioner_id", table, columnPrefix + "_practitioner_id"));
+        columns.add(Column.aliased("rendering_provider_type", table, columnPrefix + "_rendering_provider_type"));
+        columns.add(Column.aliased("rendering_provider_facility_id", table, columnPrefix + "_rendering_provider_facility_id"));
+        columns.add(Column.aliased("rendering_provider_facility_name", table, columnPrefix + "_rendering_provider_facility_name"));
+        columns.add(Column.aliased("rendering_provider_id", table, columnPrefix + "_rendering_provider_id"));
+        columns.add(Column.aliased("rendering_provider_first_name", table, columnPrefix + "_rendering_provider_first_name"));
+        columns.add(Column.aliased("rendering_provider_middle_name", table, columnPrefix + "_rendering_provider_middle_name"));
+        columns.add(Column.aliased("rendering_provider_last_name", table, columnPrefix + "_rendering_provider_last_name"));
+        columns.add(Column.aliased("rendering_provider_npi", table, columnPrefix + "_rendering_provider_npi"));
+        columns.add(Column.aliased("rendering_provider_dea", table, columnPrefix + "_rendering_provider_dea"));
+        columns.add(Column.aliased("rendering_provider_address_id", table, columnPrefix + "_rendering_provider_address_id"));
+        columns.add(Column.aliased("rendering_provider_address_line_1", table, columnPrefix + "_rendering_provider_address_line_1"));
+        columns.add(Column.aliased("rendering_provider_address_line_2", table, columnPrefix + "_rendering_provider_address_line_2"));
+        columns.add(Column.aliased("rendering_provider_city_name", table, columnPrefix + "_rendering_provider_city_name"));
+        columns.add(Column.aliased("rendering_provider_state_name", table, columnPrefix + "_rendering_provider_state_name"));
+        columns.add(Column.aliased("rendering_provider_zip", table, columnPrefix + "_rendering_provider_zip"));
+        columns.add(Column.aliased("rendering_provider_contact_id", table, columnPrefix + "_rendering_provider_contact_id"));
+        columns.add(Column.aliased("rendering_provider_phone_1", table, columnPrefix + "_rendering_provider_phone_1"));
+        columns.add(Column.aliased("rendering_provider_phone_2", table, columnPrefix + "_rendering_provider_phone_2"));
+        columns.add(Column.aliased("rendering_provider_email", table, columnPrefix + "_rendering_provider_email"));
+        columns.add(Column.aliased("rendering_provider_fax", table, columnPrefix + "_rendering_provider_fax"));
+        columns.add(Column.aliased("referring_provider_type", table, columnPrefix + "_referring_provider_type"));
+        columns.add(Column.aliased("referring_provider_facility_id", table, columnPrefix + "_referring_provider_facility_id"));
+        columns.add(Column.aliased("referring_provider_facility_name", table, columnPrefix + "_referring_provider_facility_name"));
+        columns.add(Column.aliased("referring_provider_id", table, columnPrefix + "_referring_provider_id"));
+        columns.add(Column.aliased("referring_provider_first_name", table, columnPrefix + "_referring_provider_first_name"));
+        columns.add(Column.aliased("referring_provider_middle_name", table, columnPrefix + "_referring_provider_middle_name"));
+        columns.add(Column.aliased("referring_provider_last_name", table, columnPrefix + "_referring_provider_last_name"));
+        columns.add(Column.aliased("referring_provider_npi", table, columnPrefix + "_referring_provider_npi"));
+        columns.add(Column.aliased("referring_provider_dea", table, columnPrefix + "_referring_provider_dea"));
+        columns.add(Column.aliased("referring_provider_address_id", table, columnPrefix + "_referring_provider_address_id"));
+        columns.add(Column.aliased("referring_provider_address_line_1", table, columnPrefix + "_referring_provider_address_line_1"));
+        columns.add(Column.aliased("referring_provider_address_line_2", table, columnPrefix + "_referring_provider_address_line_2"));
+        columns.add(Column.aliased("referring_provider_city_name", table, columnPrefix + "_referring_provider_city_name"));
+        columns.add(Column.aliased("referring_provider_state_name", table, columnPrefix + "_referring_provider_state_name"));
+        columns.add(Column.aliased("referring_provider_zip", table, columnPrefix + "_referring_provider_zip"));
+        columns.add(Column.aliased("referring_provider_contact_id", table, columnPrefix + "_referring_provider_contact_id"));
+        columns.add(Column.aliased("referring_provider_phone_1", table, columnPrefix + "_referring_provider_phone_1"));
+        columns.add(Column.aliased("referring_provider_phone_2", table, columnPrefix + "_referring_provider_phone_2"));
+        columns.add(Column.aliased("referring_provider_email", table, columnPrefix + "_referring_provider_email"));
+        columns.add(Column.aliased("referring_provider_fax", table, columnPrefix + "_referring_provider_fax"));
+        columns.add(Column.aliased("ordering_provider_type", table, columnPrefix + "_ordering_provider_type"));
+        columns.add(Column.aliased("ordering_provider_facility_id", table, columnPrefix + "_ordering_provider_facility_id"));
+        columns.add(Column.aliased("ordering_provider_facility_name", table, columnPrefix + "_ordering_provider_facility_name"));
+        columns.add(Column.aliased("ordering_provider_id", table, columnPrefix + "_ordering_provider_id"));
+        columns.add(Column.aliased("ordering_provider_first_name", table, columnPrefix + "_ordering_provider_first_name"));
+        columns.add(Column.aliased("ordering_provider_middle_name", table, columnPrefix + "_ordering_provider_middle_name"));
+        columns.add(Column.aliased("ordering_provider_last_name", table, columnPrefix + "_ordering_provider_last_name"));
+        columns.add(Column.aliased("ordering_provider_npi", table, columnPrefix + "_ordering_provider_npi"));
+        columns.add(Column.aliased("ordering_provider_dea", table, columnPrefix + "_ordering_provider_dea"));
+        columns.add(Column.aliased("ordering_provider_address_id", table, columnPrefix + "_ordering_provider_address_id"));
+        columns.add(Column.aliased("ordering_provider_address_line_1", table, columnPrefix + "_ordering_provider_address_line_1"));
+        columns.add(Column.aliased("ordering_provider_address_line_2", table, columnPrefix + "_ordering_provider_address_line_2"));
+        columns.add(Column.aliased("ordering_provider_city_name", table, columnPrefix + "_ordering_provider_city_name"));
+        columns.add(Column.aliased("ordering_provider_state_name", table, columnPrefix + "_ordering_provider_state_name"));
+        columns.add(Column.aliased("ordering_provider_zip", table, columnPrefix + "_ordering_provider_zip"));
+        columns.add(Column.aliased("ordering_provider_contact_id", table, columnPrefix + "_ordering_provider_contact_id"));
+        columns.add(Column.aliased("ordering_provider_phone_1", table, columnPrefix + "_ordering_provider_phone_1"));
+        columns.add(Column.aliased("ordering_provider_phone_2", table, columnPrefix + "_ordering_provider_phone_2"));
+        columns.add(Column.aliased("ordering_provider_email", table, columnPrefix + "_ordering_provider_email"));
+        columns.add(Column.aliased("ordering_provider_fax", table, columnPrefix + "_ordering_provider_fax"));
+        columns.add(Column.aliased("marketing_referal_type_id", table, columnPrefix + "_marketing_referal_type_id"));
+        columns.add(Column.aliased("marketing_referal_type_description", table, columnPrefix + "_marketing_referal_type_description"));
+        columns.add(Column.aliased("marketing_referal_id", table, columnPrefix + "_marketing_referal_id"));
+        columns.add(Column.aliased("marketing_referal_name", table, columnPrefix + "_marketing_referal_name"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_1", table, columnPrefix + "_icd_10_diagnosis_code_1"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_2", table, columnPrefix + "_icd_10_diagnosis_code_2"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_3", table, columnPrefix + "_icd_10_diagnosis_code_3"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_4", table, columnPrefix + "_icd_10_diagnosis_code_4"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_5", table, columnPrefix + "_icd_10_diagnosis_code_5"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_6", table, columnPrefix + "_icd_10_diagnosis_code_6"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_7", table, columnPrefix + "_icd_10_diagnosis_code_7"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_8", table, columnPrefix + "_icd_10_diagnosis_code_8"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_9", table, columnPrefix + "_icd_10_diagnosis_code_9"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_10", table, columnPrefix + "_icd_10_diagnosis_code_10"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_11", table, columnPrefix + "_icd_10_diagnosis_code_11"));
+        columns.add(Column.aliased("icd_10_diagnosis_code_12", table, columnPrefix + "_icd_10_diagnosis_code_12"));
+        columns.add(
+            Column.aliased("epsdt_certification_condition_indicator", table, columnPrefix + "_epsdt_certification_condition_indicator")
+        );
+        columns.add(Column.aliased("epsdt_certification_code", table, columnPrefix + "_epsdt_certification_code"));
+        columns.add(Column.aliased("status", table, columnPrefix + "_status"));
+        columns.add(Column.aliased("created_by_id", table, columnPrefix + "_created_by_id"));
+        columns.add(Column.aliased("created_by_name", table, columnPrefix + "_created_by_name"));
+        columns.add(Column.aliased("created_date", table, columnPrefix + "_created_date"));
+        columns.add(Column.aliased("updated_by_id", table, columnPrefix + "_updated_by_id"));
+        columns.add(Column.aliased("updated_by_name", table, columnPrefix + "_updated_by_name"));
+        columns.add(Column.aliased("updated_date", table, columnPrefix + "_updated_date"));
+
+        return columns;
+    }
+}

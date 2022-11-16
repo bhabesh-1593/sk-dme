@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20220829133111",
+  "clientRootFolder": "utilityapis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "usps_state_master",
+  "fields": [
+    {
+      "fieldName": "stateId",
+      "fieldType": "Long",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "stateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalAbbriviation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fipsCode",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "utilityapis",
+  "name": "USPSStateMaster",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

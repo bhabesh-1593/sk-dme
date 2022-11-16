@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20220831161357",
+  "clientRootFolder": "utilityapis",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "npi_master",
+  "fields": [
+    {
+      "fieldName": "npiId",
+      "fieldType": "Long",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "npiNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enumerationType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "npiName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "utilityapis",
+  "name": "NpiMaster",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

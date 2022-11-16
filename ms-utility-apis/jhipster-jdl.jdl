@@ -1,0 +1,39 @@
+
+entity DPVConfirmationMaster {
+	@Id dpvConfirmationId Long
+	enumerations String
+	definition String
+}
+
+entity USPSStateMaster {
+	@Id stateId Long
+	stateName String
+	postalAbbriviation String
+	fipsCode String
+}
+
+entity DPVFootnotesMaster {
+	@Id dpvFootnotesId Long
+	enumerations String
+	definition String
+}
+
+entity FootnoteMaster {
+	@Id footnotesId Long
+	enumerations String
+	definition String
+}
+
+entity UrbanizationMaster {
+	@Id urbanizationId Long
+	urbanization String
+	abbreviation String
+}
+entity NpiMaster {
+	@Id npiId Long
+	npiNumber String
+	enumerationType String
+	npiName String
+	address String
+	phone String
+}

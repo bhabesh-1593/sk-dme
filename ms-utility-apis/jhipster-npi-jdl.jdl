@@ -1,0 +1,9 @@
+entity NpiMaster {
+	@Id npiId Long
+	npiNumber String
+	enumerationType String
+	npiName String
+	address String
+	phone String
+}
+

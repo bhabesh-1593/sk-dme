@@ -1,0 +1,418 @@
+{
+  "applications": "*",
+  "changelogDate": "20220823190400",
+  "clientRootFolder": "salesorder",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "sales_order_insurance_details",
+  "fields": [
+    {
+      "fieldName": "salesOrderInsuranceDetailsId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "salesOrderId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "patientId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "primaryInsurerId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "primaryInsurerName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "primaryInsuranceGroupId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "primaryInsuranceGroupName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "primaryInsurancePlanId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryInsurancePlanType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInsuranceStateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryInsuranceStateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInsurerPolicyNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInsurerPatientIdNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInsurerEffectiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "primaryInsurerVerificationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryInsurerVerificationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "primaryInsurerPayPercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "primaryBox10d",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryBox19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryBox24ia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryBox24ja",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryBox24jb",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryIncludeBox24Jbstatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryIncludePayerSalesOrderStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryWaitForPreviousPayerBeforeBillingStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryPayPercentageStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "secondaryInsurerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsuranceGroupId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "secondaryInsuranceGroupName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "secondaryInsurancePlanId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "secondaryInsurancePlanType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsuranceStateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "secondaryInsuranceStateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerPolicyNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerPatientIdNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerEffectiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "secondaryInsurerVerificationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryInsurerVerificationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "secondaryInsurerPayPercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "secondaryBox10d",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryBox19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryBox24ia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryBox24ja",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryBox24jb",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryIncludeBox24jbStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryIncludePayerSalesOrderStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryWaitPreviousPayerBefrBillingStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryPayPercentageStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tertiaryInsurerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsuranceGroupId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tertiaryInsuranceGroupName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tertiaryInsurancePlanId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tertiaryInsurancePlanType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsuranceStateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tertiaryInsuranceStateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerPolicyno",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerPatientIdNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerEffectiveDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "tertiaryInsurerVerificationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryInsurerVerificationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "tertiaryInsurerPayPercentage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tertiaryBox10d",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryBox19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryBox24ia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryBox24ja",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryBox24jb",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryIncludeBox24jbStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryIncludePayerInSalesOrderStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryWaitPreviousPayerBeforeBillingStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryPayPercentage0Status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insuranceVerificationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coverageVerificationStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "excludeFromEligibilityCheckStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "patientPayPercentage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "patientIncludeThisPayorInSalesOrderStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "patientWaitForPreviousPayerBeforeBillingStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workersCompDateOfOnset",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "workersCompInjuryRelatedEmploymentStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workersCompInjuryRelatedAutoAccidentStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workersCompAutoAccidentStateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "workersCompInjuryRelatedToOtherAccidentStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eclaimsAttachmentStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "attachmentNumber",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "typeCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "claimsNoteType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "claimsNote",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salesOrderNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createdByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updatedByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "salesorder",
+  "name": "SalesOrderInsuranceDetails",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

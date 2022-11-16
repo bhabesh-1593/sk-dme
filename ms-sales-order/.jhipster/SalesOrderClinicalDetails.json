@@ -1,0 +1,443 @@
+{
+  "applications": "*",
+  "changelogDate": "20220823190358",
+  "clientRootFolder": "salesorder",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "sales_order_clinical_details",
+  "fields": [
+    {
+      "fieldName": "salesOderClinicalDetailsId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "salesOderId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "patientId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "patientWeightInKg",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "patientWeightInLbs",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "heightInInches",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "heightInCm",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salesRepId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "salesepName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "practitionerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "renderingProviderType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderFacilityId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "renderingProviderFacilityName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "renderingProviderId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "renderingProviderFirstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "renderingProviderMiddleName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "renderingProviderLastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "renderingProviderNpi",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "renderingProviderDea",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "renderingProviderAddressId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "renderingProviderAddressLine1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderAddressLine2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderCityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderStateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderZip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderContactId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "renderingProviderPhone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderPhone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "renderingProviderFax",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderFacilityId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "referringProviderFacilityName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "referringProviderId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "referringProviderFirstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "referringProviderMiddleName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "referringProviderLastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "referringProviderNpi",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "referringProviderDea",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "referringProviderAddressId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "referringProviderAddressLine1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderAddressLine2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderCityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderStateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderZip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderContactId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "referringProviderPhone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderPhone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referringProviderFax",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderFacilityId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "orderingProviderFacilityName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "orderingProviderId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderingProviderFirstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "orderingProviderMiddleName",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "orderingProviderLastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+\\d$"
+    },
+    {
+      "fieldName": "orderingProviderNpi",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderingProviderDea",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderingProviderAddressId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderingProviderAddressLine1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderAddressLine2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderCityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderStateName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderZip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderContactId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderingProviderPhone1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderPhone2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderingProviderFax",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marketingReferalTypeId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "marketingReferalTypeDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marketingReferalId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "marketingReferalName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "icd10DiagnosisCode1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "icd10DiagnosisCode12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "epsdtCertificationConditionIndicator",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "epsdtCertificationCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createdByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedById",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "updatedByName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "salesorder",
+  "name": "SalesOrderClinicalDetails",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
